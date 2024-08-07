@@ -14,16 +14,16 @@ const projectSchema = new mongoose.Schema({
 const Project = mongoose.model("Entry", projectSchema);
 
 //Helper functions
-const addition = require(__dirname + "\\src\\helper\\Addition.cjs");
-const validate = require(__dirname + "\\src\\helper\\Validate.cjs");
-const percentage = require(__dirname + "\\src\\helper\\Percentage.cjs");
-const period = require(__dirname + "\\src\\helper\\Timeperiod.cjs");
+const addition = require(__dirname + "/src/helper/Addition.cjs");
+const validate = require(__dirname + "/src/helper/Validate.cjs");
+const percentage = require(__dirname + "/src/helper/Percentage.cjs");
+const period = require(__dirname + "/src/helper/Timeperiod.cjs");
 
 //CRUD
-const create = require(__dirname + "\\src\\database\\Create.cjs");
-const query = require(__dirname + "\\src\\database\\Read.cjs");
-const remove = require(__dirname + "\\src\\database\\Delete.cjs");
-const update = require(__dirname + "\\src\\database\\Update.cjs");
+const create = require(__dirname + "/src/database/Create.cjs");
+const query = require(__dirname + "/src/database/Read.cjs");
+const remove = require(__dirname + "/src/database/Delete.cjs");
+const update = require(__dirname + "/src/database/Update.cjs");
 
 //general requirements
 const express = require("express");
