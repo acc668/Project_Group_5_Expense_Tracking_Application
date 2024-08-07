@@ -1,6 +1,6 @@
 //jshint esversion: 6
 
-const validate = require(__dirname + "\\Validate.cjs");
+const validate = require(__dirname + "/Validate.cjs");
 
 module.exports.Addition = function(array) {
     var sum = Number(0);
