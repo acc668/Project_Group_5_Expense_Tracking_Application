@@ -147,10 +147,10 @@ app.post("/", function(req, res) {
 
         //check if everything is entered properly
         if(amount == null) {
-            res.redirect("http://localhost:3000/enterData");
+            res.redirect("https://cs312-budget-buddy-fa1be346731c.herokuapp.com/enterData");
         }
         else if (name == null) {
-            res.redirect("http://localhost:3000/enterData");
+            res.redirect("https://cs312-budget-buddy-fa1be346731c.herokuapp.com/enterData");
         }
         else {
             //use frequency to determine how often it recurs
@@ -160,7 +160,7 @@ app.post("/", function(req, res) {
             //create a new database entry
             create.Create(Project, name, amount, category, frequency);
 
-            res.redirect("http://localhost:3000/enterData");
+            res.redirect("https://cs312-budget-buddy-fa1be346731c.herokuapp.com/enterData");
         }
     }
 
@@ -171,7 +171,7 @@ app.post("/", function(req, res) {
 
         remove.Delete(Project, toPurge);
 
-        res.redirect("http://localhost:3000/displayData");
+        res.redirect("https://cs312-budget-buddy-fa1be346731c.herokuapp.com/displayData");
     }
 });
 
