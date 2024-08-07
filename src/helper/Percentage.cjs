@@ -1,4 +1,4 @@
-const addition = require(__dirname + "\\Addition.cjs");
+const addition = require(__dirname + "/Addition.cjs");
 
 module.exports.Percentage = function (array_cost, array_names) {
     const percentages = {};
